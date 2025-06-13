@@ -13,7 +13,8 @@ class GiftsService {
     const response = await api.post('api/gifts', giffyFormData)
     console.log(response)
     const newgift = new Gift(response.data)
-    AppState.openedGift.push(newgift)
+    AppState.gifts.unshift(newgift)
+
   }
 
 
@@ -41,11 +42,27 @@ class GiftsService {
       openedGift.opened = true;
       const response = await api.put(`api/gifts/${giftId}`, openedGift)
       console.log("the gift was opened and sent back!", response.data)
-      AppState.openedGift = openedGift
+      AppState.gifts
     }
   }
 
+  //use splice above like below!
 
+
+  //  async updateSpell(spellId) {
+  //     const spells = AppState.sandboxSpells
+  //     // NOTE we can use findIndex to get our spell object with bracket notation, and also for our splice
+  //     const spellIndex = spells.findIndex(spell => spell.id == spellId)
+  //     const spellToUpdate = spells[spellIndex]
+  //     // the opposite boolean value of what is stored in the appstate
+  //     const spellData = { prepared: !spellToUpdate.prepared }
+  //     const response = await api.put(`api/spells/${spellId}`, spellData)
+  //     console.log('UPDATED SPELL', response.data);
+  //     const updatedSpell = new SandboxSpell(response.data)
+  //     // NOTE we use splice to take the old spell out and replace it with the updatedSpell from the API
+  //     // [ 'blue', 'red', 'green' ].splice(1, 1, 'yellow') => [ 'blue', 'yellow', 'green' ]
+  //     spells.splice(spellIndex, 1, updatedSpell)
+  //   }
 
 
 }

@@ -10,7 +10,7 @@ export class GiftsController {
     console.log("The Gift Controller is alive!! 🎁🛂")
     AppState.on("identity", this.getGift)
     AppState.on('gifts', this.drawGifts)
-    AppState.on('openedGift', this.getGift)
+
   }
 
   async getGift() {
