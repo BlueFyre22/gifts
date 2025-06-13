@@ -1,0 +1,29 @@
+/* BASIC STYLES HERE */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+
+}
+
+.height-help {
+  min-height: 100vh;
+}
+
+#pop-toast-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+}
+
+.img-help {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
+}

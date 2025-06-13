@@ -1,0 +1,31 @@
+{
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "javascript.preferences.importModuleSpecifierEnding": "js",
+  "github.copilot.editor.enableAutoCompletions": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "workbench.colorCustomizations": {
+    "commandCenter.border": "#15202b99",
+    "sash.hoverBorder": "#dd9b39",
+    "statusBar.background": "#c28121",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#96641a",
+    "statusBarItem.remoteBackground": "#c28121",
+    "statusBarItem.remoteForeground": "#15202b",
+    "titleBar.activeBackground": "#c28121",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#c2812199",
+    "titleBar.inactiveForeground": "#15202b99",
+    "activityBar.activeBackground": "#dd9b39",
+    "activityBar.background": "#dd9b39",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#c9f6e4",
+    "activityBarBadge.foreground": "#15202b"
+  },
+  "peacock.color": "#c28121",
+}

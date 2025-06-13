@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="https://em-content.zobj.net/source/google/110/wrapped-present_1f381.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <title>gifts</title>
+</head>
+
+<body data-bs-theme="dark">
+  <header>
+    <nav class="navbar bg-codeworks text-light gap-2 px-2">
+      <img src="https://em-content.zobj.net/source/google/110/wrapped-present_1f381.png" height="45" alt=""
+        loading="lazy">
+      <div><b>gifts</b></div>
+      <div class="ms-auto" id="authstate"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="">
+    <section class="container-fluid height-help ">
+      <div class="row bg-success">
+
+        <div class="col-md-3 p-3 height-help ">
+          <form class="d-flex flex-column bg-success" id="add-gif" onsubmit="app.giftsController.submitGiffy()">
+            <label for="tag-input">Tag</label>
+            <input id="tag-input" class="bg-light text-dark" required name="tag" type="text"
+              placeholder="idk what this means">
+            <label for="url">Url</label>
+            <input id="url" class="bg-light text-dark" required name="url" type="text"
+              placeholder="put in an https:// something">
+            <div class="justify-content-end d-flex pt-3">
+              <button class=" w-25 text-center btn btn-outline-light" type="submit">Submit</button>
+            </div>
+            <hr>
+            <label for="search-gifs">Search Gifs</label>
+            <div class="d-flex justify-content-between">
+              <input id="search-gifs" type="text" class="bg-light w-100" placeholder="give us something to search">
+              <button><span class="mdi mdi-image-search-outline"></span></button>
+            </div>
+          </form>
+
+        </div>
+
+        <div class="col-md-9 bg-dark">
+          <div class="row" id="img-list">
+            <!-- NOTE This is my present template -->
+            <!-- <div class="col-md-4 pb-2 px-1">
+
+              <img
+                src="https://images.unsplash.com/photo-1575550959106-5a7defe28b56?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGxpb258ZW58MHx8MHx8fDA%3D"
+                alt="a lion" class="img-help">
+
+            </div> -->
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="text-bg-dark">
+    <div class="text-center">
+      <p class="mb-0"><small>Made with <i class="mdi mdi-heart text-pink"></i> by CodeWorks</small></p>
+    </div>
+  </footer>
+
+  <!-- SECTION links for bootstrap, axios, and auth -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/1.22/auth0-spa-js.production.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/jakeoverall/auth0provider-client/browser/Auth0Provider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- !SECTION -->
+  <!-- The start of our javascript -->
+  <script src="app/App.js" type="module"></script>
+
+</body>
+
+</html>
